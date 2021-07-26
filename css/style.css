@@ -384,7 +384,7 @@ img {
   display: block;
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .content-item:nth-child(3n) {
   margin-right: 0;
