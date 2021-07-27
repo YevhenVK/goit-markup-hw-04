@@ -30,22 +30,18 @@ html {
 }
 
 .container {
-  /* НОВОЕ */
-  margin-left: auto; /* margin: 0 auto */
+  margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
   align-items: center;
 }
 .section {
-  /* НОВОЕ */
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* Whitout dots */
 .list {
   padding: 0;
   margin: 0;
@@ -59,42 +55,53 @@ p {
   margin-top: 0;
 }
 /* Header  */
-/* Контакты в одну строчку */
 .container .item:not(:last-child) {
   margin-right: 50px;
 }
-/* (или так можно сделать растояние между ссылками)
-.site-nav .item + .item,
-.contact .item + .item {
-  margin-left: 50px;
-} */
-
 .container.row {
   padding-top: 19px;
   padding-bottom: 30px;
 }
-
 .container.row,
 .site-nav,
 .contact {
   display: flex;
 }
-
 .contact .link {
   color: var(--primary-text-color);
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+/* Значки слева от телефона и почты 1 вариант */
+/* .contact .link::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 10px;
+  background-position: center;
+}
+.mail::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../img/envelope.svg);
+}
+.link.tel::before {
+  width: 10px;
+  height: 16px;
+  background-image: url(../img/smartphone.svg);
+} */
+
 .site-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   margin-left: 93px;
-  margin-right: 331px; /* или .contact.list { margin-left: auto; } */
+}
+.contact.list {
+  margin-left: auto;
 }
 /* чтоб кнопки было удобно нажимать
 .nav-item {
@@ -112,10 +119,21 @@ p {
 
 /* Main */
 .post {
+  min-height: 600px;
+  max-width: 1600px;
   background-color: var(--secondary-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      180deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0) 100%
+    ),
+    url("../img/Header.jpg");
 }
 
 .post-title {
@@ -400,42 +418,27 @@ img {
   border-left: 1px solid #eeeeee;
 }
 
-/* Один вариант с justify-content: space-between;*/
-/* .content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.content-item .link {
+/* Для блочка мейн значки*/
+.container-block::before {
   display: block;
-  border: 1px solid #eeeeee;
-  margin-bottom: 0;
-  margin-top: 30px;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
-.card-title {
-  display: block;
-  padding: 20px 24px;
-} */
-
-/* Второй вариант с отступами по 30px */
-
-/* .content .link {
-  display: block;
+.container-block:nth-child(1)::before {
+  background-image: url("../img/antenna.svg");
 }
-.content-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  border: 1px solid #eeeeee;
-  width: 370px;
+.container-block:nth-child(2)::before {
+  background-image: url("../img/clock.svg");
 }
-.content.list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+.container-block:nth-child(3)::before {
+  background-image: url("../img/diagram.svg");
 }
-
-.card-title {
-  display: block;
-  padding: 20px 24px;
-} */
+.container-block:nth-child(4)::before {
+  background-image: url("../img/astronaut.svg");
+}
