@@ -98,8 +98,26 @@ img {
   margin-left: 93px;
 }
 .contact.list {
+  display: inline-flex;
   margin-left: auto;
+  align-items: center;
 }
+
+/* Значки слева от телефона и почты 2 вариант */
+
+.bond {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+.contact-item a:hover,
+.contact-item a:focus {
+  fill: var(--accent-color);
+}
+
+.container .contact-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* чтоб кнопки было удобно нажимать
 .nav-item {
   padding-top: 5px;
@@ -286,18 +304,16 @@ img {
 }
 
 /* Just focus and hover */
-.filter-button:focus,
-.filter-button:focus,
 .address-text:focus,
 .address-text:hover,
 .logo:hover,
 .logo:focus,
+.logo.down:hover,
+.logo.down:focus,
 .footer-contact .link:focus,
 .footer-contact .link:hover,
 .site-nav .link:focus,
-.site-nav .link:hover,
-.contact .link:focus,
-.contact .link:hover {
+.site-nav .link:hover {
   color: var(--accent-color);
 }
 .post-button:focus,
@@ -366,10 +382,14 @@ img {
   border-color: var(--accent-color);
 }
 
-/* Footer */
+/* --------- Footer --------*/
 .footer-page {
   background-color: var(--secondary-background-color);
   padding: 60px 0 60px 0;
+}
+.footer-page .ground {
+  display: flex;
+  align-items: baseline;
 }
 .footer-contact li:not(:last-child) {
   margin-bottom: 6px;
@@ -396,6 +416,44 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.social-title {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-social > li {
+  display: inline-flex;
+}
+.footer-social-page {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--secondary-text-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-page:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-page:hover {
+  background-color: var(--accent-color);
+}
+.ground > div:not(:last-child) {
+  margin-right: 70px;
 }
 
 /* Portfolio */
@@ -528,11 +586,3 @@ img {
   height: 16px;
   background-image: url(../img/smartphone.svg);
 } */
-
-/* Значки слева от телефона и почты 2 вариант */
-.item {
-  display: inline-flex;
-}
-.device {
-  margin-right: 10px;
-}
