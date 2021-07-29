@@ -90,26 +90,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-/* Значки слева от телефона и почты 1 вариант */
-/* .contact .link::before {
-  content: "";
-  display: inline-flex;
-  margin-right: 10px;
-  background-position: center;
-}
-.mail::before {
-  width: 16px;
-  height: 12px;
-  background-image: url(../img/envelope.svg);
-}
-.link.tel::before {
-  width: 10px;
-  height: 16px;
-  background-image: url(../img/smartphone.svg);
-} */
-
-/* Значки слева от телефона и почты 2 вариант */
-
 .site-nav {
   font-weight: 500;
   font-size: 14px;
@@ -185,6 +165,17 @@ img {
 .container-list {
   /* НОВОЕ */
   display: flex;
+}
+/* Для блочка мейн значки вариант 2 */
+/* Картинки в 1 секции */
+.concern {
+  background-color: var(--background-button-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+.concern-icon {
+  width: 70px;
+  height: 70px;
 }
 .container-title {
   color: var(--title-text-color);
@@ -520,14 +511,28 @@ img {
   background-image: url("../img/astronaut.svg");
 } */
 
-/* Для блочка мейн значки вариант 2 */
-/* Картинки в 1 секции */
-.concern {
-  background-color: var(--background-button-color);
-  padding: 25px 100px;
-  margin-bottom: 30px;
+/* Значки слева от телефона и почты 1 вариант */
+/* .contact .link::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 10px;
+  background-position: center;
 }
-.concern-icon {
-  width: 70px;
-  height: 70px;
+.mail::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../img/envelope.svg);
+}
+.link.tel::before {
+  width: 10px;
+  height: 16px;
+  background-image: url(../img/smartphone.svg);
+} */
+
+/* Значки слева от телефона и почты 2 вариант */
+.item {
+  display: inline-flex;
+}
+.device {
+  margin-right: 10px;
 }
