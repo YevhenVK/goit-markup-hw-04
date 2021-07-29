@@ -7,6 +7,7 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --accent-color: #2196f3;
+  --social-text-color: #afb1b8;
   --secondary-address-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
   --background-team-color: #f5f4fa;
@@ -54,6 +55,20 @@ p {
   margin-bottom: 0;
   margin-top: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Color of navigation */
+.link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Header  */
 .container .item:not(:last-child) {
   margin-right: 50px;
@@ -240,6 +255,7 @@ p {
 .team.list li {
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-background-color);
 }
 .team.list p {
   font-weight: 400;
@@ -248,20 +264,36 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 10px;
-  margin-bottom: 30px;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  margin-bottom: 0px;
 }
 
-/* Color of navigation */
-.link {
-  color: var(--title-text-color);
-  text-decoration: none;
-  cursor: pointer;
+/* Социальные странички нашей команды */
+.special {
+  display: inline-flex;
+  margin: 16px 32px 30px;
 }
+.social-page {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--social-text-color);
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.social-page:not(:last-child) {
+  margin-right: 10px;
+}
+.social-page:hover,
+.icon:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-background-color);
+}
+
 /* Just focus and hover */
 .filter-button:focus,
 .filter-button:focus,
@@ -303,6 +335,44 @@ img {
 /* Made our Web to bluey */
 .logo > span {
   color: var(--accent-color);
+}
+
+/* Эмблемки для Постоянные клиенты */
+.clients {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.company {
+  display: inline-flex;
+}
+.company-icon {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--social-text-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--social-text-color);
+}
+.company-list:not(:last-child) {
+  margin-right: 30px;
+}
+.emblem {
+  padding: 16px 32px;
+}
+.company-icon:hover,
+.company-icon:focus,
+.emblem:hover,
+.emblem:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* Footer */
@@ -449,4 +519,15 @@ img {
 .container-block:nth-child(4)::before {
   background-image: url("../img/astronaut.svg");
 } */
+
 /* Для блочка мейн значки вариант 2 */
+/* Картинки в 1 секции */
+.concern {
+  background-color: var(--background-button-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+.concern-icon {
+  width: 70px;
+  height: 70px;
+}
