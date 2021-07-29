@@ -414,7 +414,8 @@ img {
 /* Тень для карточек в портфолио */
 .content-item:hover,
 .content-item:focus {
-  box-shadow: 0px 6px 24px 5px rgba(115, 106, 106, 0.73);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-title {
   display: block;
@@ -424,8 +425,8 @@ img {
   border-left: 1px solid #eeeeee;
 }
 
-/* Для блочка мейн значки*/
-.container-block::before {
+/* Для блочка мейн значки вариант 1 */
+/* .container-block::before {
   display: block;
   content: "";
   height: 120px;
@@ -447,4 +448,5 @@ img {
 }
 .container-block:nth-child(4)::before {
   background-image: url("../img/astronaut.svg");
-}
+} */
+/* Для блочка мейн значки вариант 2 */
