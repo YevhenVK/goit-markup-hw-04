@@ -107,11 +107,12 @@ img {
 
 .bond {
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
+
 .contact-item a:hover,
 .contact-item a:focus {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .container .contact-item:not(:last-child) {
