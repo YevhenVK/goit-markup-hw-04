@@ -98,7 +98,7 @@ img {
   margin-left: 93px;
 }
 .contact.list {
-  display: inline-flex;
+  display: flex;
   margin-left: auto;
   align-items: center;
 }
@@ -279,7 +279,7 @@ img {
 
 /* Социальные странички нашей команды */
 .special {
-  display: inline-flex;
+  display: flex;
   margin: 16px 32px 30px;
 }
 .social-page {
@@ -355,7 +355,7 @@ img {
   margin-bottom: 50px;
 }
 .company {
-  display: inline-flex;
+  display: flex;
 }
 .company-icon {
   width: 170px;
