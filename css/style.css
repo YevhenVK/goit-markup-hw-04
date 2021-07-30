@@ -291,15 +291,14 @@ img {
   border-radius: 50%;
   fill: var(--social-text-color);
 }
-.icon {
-  width: 20px;
-  height: 20px;
-}
+
 .social-page:not(:last-child) {
   margin-right: 10px;
 }
 .social-page:hover,
-.icon:focus {
+.social-page:focus,
+.icon:focus,
+.icon:hover {
   background-color: var(--accent-color);
   fill: var(--primary-background-color);
 }
@@ -442,15 +441,12 @@ img {
   fill: var(--secondary-text-color);
   background: rgba(255, 255, 255, 0.1);
 }
-.social-icon {
-  width: 20px;
-  height: 20px;
-}
 
 .footer-social-page:not(:last-child) {
   margin-right: 10px;
 }
-.footer-social-page:hover {
+.footer-social-page:hover,
+.footer-social-page:focus {
   background-color: var(--accent-color);
 }
 .ground > div:not(:last-child) {
