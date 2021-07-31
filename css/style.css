@@ -377,9 +377,7 @@ img {
 .company-list:not(:last-child) {
   margin-right: 30px;
 }
-.emblem {
-  padding: 16px 32px;
-}
+
 .company-icon:hover,
 .company-icon:focus,
 .emblem:hover,
