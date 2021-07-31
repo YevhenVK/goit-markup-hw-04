@@ -220,7 +220,7 @@ img {
 .container-block {
   min-width: 270px;
 }
-.container .container-block:not(:last-child) {
+.container-block:not(:last-child) {
   margin-right: 30px;
 }
 /* Occupation */
@@ -238,10 +238,15 @@ img {
 .section-employment {
   margin-bottom: 94px;
 }
-/* Container-inner */
+
+/* Наша команда */
 .container-inner {
   color: var(--title-text-color);
   background-color: var(--background-team-color);
+}
+.personal-card {
+  display: block;
+  padding: 30px 32px;
 }
 .container-inner h2 {
   font-weight: 700;
@@ -260,55 +265,52 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.team.list h3 {
+.personal-card h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+  margin-bottom: 10px;
 }
-.team.list li {
-  box-shadow: var(--card-shadow);
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--primary-background-color);
-}
-.team.list p {
+.personal-card p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 10px;
-  margin-bottom: 0px;
+}
+.personal-card {
+  box-shadow: var(--card-shadow);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-background-color);
 }
 
-/* Социальные странички нашей команды */
 .special {
   display: flex;
-  margin: 16px 32px 30px;
-}
-.social-page {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  fill: var(--social-text-color);
+  margin-top: 16px;
 }
 
+.social-page-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--social-text-color);
+  border-radius: 50%;
+}
 .social-page:not(:last-child) {
   margin-right: 10px;
 }
-.social-page:hover,
-.social-page:focus,
+.social-page-icon:hover,
+.social-page-icon:focus,
 .icon:focus,
 .icon:hover {
   background-color: var(--accent-color);
   fill: var(--primary-background-color);
 }
-
+/* ---------------------------------------- */
 /* Just focus and hover */
 .address-text:focus,
 .address-text:hover,
