@@ -136,8 +136,8 @@ img {
   min-height: 600px;
   max-width: 1600px;
   background-color: var(--secondary-background-color);
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
+  margin-right: auto;
+  margin-left: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
