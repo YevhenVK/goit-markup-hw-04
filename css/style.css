@@ -31,12 +31,10 @@ html {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
 }
 .section {
   padding-top: 94px;
@@ -73,14 +71,12 @@ img {
 .container .item:not(:last-child) {
   margin-right: 50px;
 }
-.container.row {
-  padding-top: 19px;
-  padding-bottom: 30px;
-}
-.container.row,
+.header-page .container,
+.navigation,
 .site-nav,
-.contact {
+.contact.list {
   display: flex;
+  align-items: center;
 }
 .contact .link {
   color: var(--primary-text-color);
@@ -97,14 +93,21 @@ img {
   letter-spacing: 0.02em;
   margin-left: 93px;
 }
-.contact.list {
+.nav-item .link,
+.contact-item .link {
   display: flex;
-  margin-left: auto;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-
+.contact {
+  margin-left: auto;
+}
+.contact-item {
+  padding: 0px;
+  display: flex;
+}
 /* Значки слева от телефона и почты 2 вариант */
-
 .bond {
   margin-right: 10px;
   fill: currentColor;
@@ -119,27 +122,24 @@ img {
   margin-right: 30px;
 }
 
-/* чтоб кнопки было удобно нажимать
-.nav-item {
-  padding-top: 5px;
-  padding-bottom: 5px;
-} */
 .site-nav .link.current {
   color: var(--accent-color);
 }
 /* Нижняя граница хедера в сером цвете */
 .header-page {
-  display: block;
   border-bottom: 1px solid #c4c4c4;
 }
 
 /* Main */
-.post {
+.section.post {
+  display: flex;
   min-height: 600px;
   max-width: 1600px;
   background-color: var(--secondary-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -150,6 +150,7 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url("../img/Header.jpg");
+  width: 100%;
 }
 
 .post-title {
@@ -160,6 +161,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 696px;
 }
 
 .post-button {
@@ -169,6 +171,7 @@ img {
   margin-bottom: 0;
   font-family: inherit;
   text-align: center;
+  align-items: center;
   min-width: 200px;
   padding: 10px 32px;
   font-weight: 700;
